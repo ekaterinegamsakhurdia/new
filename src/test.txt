@@ -1,0 +1,37 @@
+package main
+
+
+import (
+	"fmt"
+)
+
+
+func main() {
+// sums upto N
+// 	var n = 0;;
+// 	fmt.Println("Enter integer: ");;
+//     fmt.Scanln(&n)
+// 	var sum = 0;;
+// 	for n > 0 {
+// 		sum=sum+n;
+// 		n = n -1;;
+// 	};
+// 	fmt.Println(sum);
+
+//   gcd
+    var a = 0;
+    fmt.Println("Enter a: ");;
+    fmt.Scanln(&a)
+    var b = 0
+    fmt.Println("Enter b: ");;
+    fmt.Scanln(&b)
+    for a != b {
+        if a > b {
+            a = a - b
+        }
+        if a < b {
+            b = b - a
+        }
+    }
+    fmt.Println(a)
+}
